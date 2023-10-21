@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "git@github.com:Giantbapt/Amateurs-tabs.git",
   "author": "exec zsh <exec zsh>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.19.5"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds",
+    "scriptname": "cmd"
+  }
 }

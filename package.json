@@ -1,0 +1,8 @@
+{
+  "name": "Amateurs-tabs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Giantbapt/Amateurs-tabs.git",
+  "author": "exec zsh <exec zsh>",
+  "license": "MIT"
+}

@@ -8,13 +8,15 @@
 
 require "csv"
 
-filepath = "data/names.csv"
+Athlete.destroy_all
+
+filepath = "data/names2.csv"
 csv_text = File.read(Rails.root.join(filepath))
 puts csv_text
 csv = CSV.parse(csv_text, :headers => true)
 
 csv.each do |row|
-  puts "hello"
+  # puts "hello"
   a = Athlete.new
   a.name = row['name']
   a.save

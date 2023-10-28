@@ -20,6 +20,6 @@ csv.each do |row|
   a = Athlete.new
   a.name = row['name']
   a.save
-  puts a.name
+  puts " #{a.name} is saved"
 
 end

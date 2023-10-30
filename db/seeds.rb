@@ -10,7 +10,7 @@ require "csv"
 
 Athlete.destroy_all
 
-filepath = "data/names2.csv"
+filepath = "data/names3.csv"
 csv_text = File.read(Rails.root.join(filepath))
 puts csv_text
 csv = CSV.parse(csv_text, :headers => true)
@@ -19,7 +19,8 @@ csv.each do |row|
   # puts "hello"
   a = Athlete.new
   a.name = row['name']
+  a.wiki = row['wiki']
   a.save
-  puts " #{a.name} is saved"
+  puts " #{a.name}, url #{a.wiki} is saved"
 
 end
